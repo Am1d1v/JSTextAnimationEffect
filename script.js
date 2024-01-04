@@ -6,7 +6,7 @@ const text = document.querySelector('.text');
 const spans = text.innerText
                             .split('')
                             .map((letter, index) => {
-                                return `<span>${letter}</span>`
+                                return `<span style="transition-delay:${index * 30}ms; filter: hue-rotate(${index * 30}deg)">${letter}</span>`
                             })
                             .join('');
 
